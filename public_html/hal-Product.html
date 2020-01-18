@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            * {box-sizing: border-box}
+            body {font-family: "Lato", sans-serif;}
+
+            /* Style the tab */
+            .tab {
+                float: left;
+                border: 1px solid #ccc;
+                background-color: #2b454e;
+                width: 30%;
+                height: 300px;
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                display: block;
+                background-color: inherit;
+                color: white;
+                padding: 22px 16px;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                color: black;
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            .tab button.active {
+                color:black;
+                background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                float: left;
+                padding: 0px 12px;
+                border: 1px solid #ccc;
+                width: 70%;
+                border-left: none;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align:center">
+            <h2>PRODUK HUKUM DELEGALITAS</h2>
+            <p>Your Legal Service Solution</p>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Perjanjian</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">PT/CV</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Konsultasi Hukum</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+            <h3>Perjanjian</h3>
+            <p>Dalam Proses</p>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <h3>PT/CV</h3>
+            <p>Dalam Proses</p> 
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <h3>Konsultasi Hukum</h3>
+            <p>Dalam Proses</p>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+</html>

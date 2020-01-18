@@ -1,0 +1,229 @@
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: $default-font-size;
+    color: $color-black;
+}
+
+.heading-primary {
+    color: $color-white;
+
+    backface-visibility: hidden;
+
+    &--main {
+
+        text-transform: uppercase;
+        display: block;
+        font-size: 4.5rem;
+        font-weight: 900;
+        letter-spacing: 1rem;
+
+        animation: moveInRight 1s ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+
+        animation: moveInLeft 1s ease-out;
+
+        h3 {
+            color: $color-primary;
+            font-size: 1.2rem;
+            font-weight: 100;
+        }
+
+        p {
+            padding-bottom: 1rem;
+        }
+
+        a {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.heading-card {
+    padding: .8rem 2.2rem 1rem 2.2rem;
+    color: $color-secondary;
+
+    backface-visibility: hidden;
+
+    &--main {
+        display: inline-block;
+
+        font-size: 1rem;
+        font-weight: 600;
+
+        h4 {
+            position: absolute;
+            left: 28%;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-align: left;
+
+            display: inline-block;
+        }
+
+        p {
+            color: $color-primary;
+            font-size: 6rem;
+            font-weight: 900;
+
+            margin-left: 1.8rem;
+            display: inline-block;
+        }
+    }
+    &--sub {
+        /*        background-color: red;*/
+        width: 80%;
+        text-align: center;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin: 0 0 .9rem 1.6rem;
+
+        &-list {
+            list-style-type: decimal;
+            margin: .5rem 0 0 3rem;
+            padding-bottom: .2rem;
+        }
+    }
+}
+
+.heading-umkm {
+    color: $color-secondary;
+
+    backface-visibility: hidden;
+
+    &--main {
+        text-transform: uppercase;
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 800;
+        padding-bottom: .2em;
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.heading-star {
+    color: $color-secondary;
+
+    backface-visibility: hidden;
+
+    &--main {
+        text-transform: uppercase;
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 1em;
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.heading-layanan {
+    color: $color-white;
+
+    backface-visibility: hidden;
+
+    &--main {
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-top: .2em;
+        padding-bottom: .2em;
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.heading-about {
+    color: $color-secondary;
+
+    backface-visibility: hidden;
+
+    padding-bottom: 3rem;
+    &--main {
+        text-transform: uppercase;
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 800;
+        padding-bottom: .1em;
+    }
+    &--sub {
+        display: block;
+        font-size: .9rem;
+        font-weight: 500;
+    }
+}
+
+.heading-popup {
+    position: absolute;
+    top: 19%;
+    right: 16.5%;
+    width: 70%;
+    padding: 1rem 0 1.2rem 0;
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    backface-visibility: hidden;
+
+    &--main {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        font-weight: 800;
+        padding-bottom: .1em;
+    }
+}
+
+.heading-popup-product {
+    position: absolute;
+    top: 18%;
+    right: 16.5%;
+    width: 70%;
+    padding: 1rem 0 1.2rem 0;
+    background-color: $color-primary;
+    color: $color-white;
+
+    backface-visibility: hidden;
+
+    &--main {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        font-weight: 800;
+        padding-bottom: .1em;
+    }
+}
+
+.heading-support {
+    color: $color-secondary;
+
+
+    &--main {
+
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: 900;
+
+        animation: moveInRight 1s ease-out;
+    }
+}

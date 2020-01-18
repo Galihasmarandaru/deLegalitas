@@ -1,0 +1,584 @@
+/* The Modal (background) */
+.modal-umkm {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: -13.5%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba($color-black,.4); /* Black w/ opacity */
+
+    transition: all .3s;
+}
+
+/* Modal Content */
+.modal-content-umkm {
+    background-color: rgba($color-white, .98);
+    color: $color-secondary;
+    margin-top: 8rem;
+    margin-left: 6.5rem;
+    width: 80%;
+    border-radius: .8rem;
+    /*    border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;*/
+
+    &-word {
+        padding: 4rem;
+        text-align: justify;
+
+        &--req {
+            padding: 0 0 1rem 0;
+            &__icon {
+                display: inline-block;
+                margin-right: 1rem;
+                &-ic {
+                    font-size: 2rem;
+                    color: $color-primary;
+                    padding-right: .5rem;
+                }
+            }
+        }
+    }
+
+    animation: moveInBottom ease-in .3s;
+}
+
+
+/* The Modal (background) */
+.modal-produk {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: -13.5%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba($color-black,.4); /* Black w/ opacity */
+
+    transition: moveInBottom ease-in .3s;
+}
+
+/* Modal Content */
+.modal-content-produk-1 {
+    background-color: $color-white;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    padding: 20px;
+    border-radius: .8rem;
+    width: 90%;
+
+    &-word {
+        color: $color-secondary;
+        h1,h3,h4 {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 2.2rem;
+        }
+
+        &--content-first {
+            padding: 6rem 4rem 2rem 4rem;
+            b {
+                color: $color-primary;
+                font-size: 2.5rem;
+            }
+        }
+
+        &--content-second {
+            padding: 0 4rem 0 4rem;
+            text-align: center;
+            &-ic {
+                font-size: 6rem;
+                padding: 2rem 0 4rem 0;
+            }
+            b {
+                color: $color-primary;
+                font-size: 1.6rem;
+            }
+        }
+
+        &--content-third {
+            padding: 0 3rem 0 3rem;
+            width: 92%;
+            text-align: center;
+            &-isi{
+                height: 45vh;
+                border-radius: .8rem;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                width: 100%;
+
+                p {
+                    border-radius: .8rem;
+                    margin-left: 4.7rem;
+                    width: 70%;
+                    background-color: azure;
+                    color: $color-secondary;
+                    margin-bottom: 1rem;
+                    padding: .6rem 0 .6rem 0;
+                }
+            }
+
+            h2 {
+                font-size: 2.4rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        &--content-fourth {
+            text-align: center;
+            padding: 6rem 0 1rem 0;
+            &-isi {
+                margin-left: 22rem;
+                margin-bottom: 1rem;
+                height: 1vh;
+                border-radius: .8rem;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+                width: 40%;
+            }
+            h2 {
+                font-size: 2.4rem;
+                padding-bottom: 4rem;
+            }
+        }
+
+        &--content-fifth {
+            text-align: center;
+            padding: 3rem 0 4rem 0;
+            &-isi {
+                margin-bottom: 1rem;
+                margin-left: 22rem;
+                height: 1vh;
+                border-radius: .8rem;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+                width: 40%;
+            }
+            h2 {
+                font-size: 2.4rem;
+                padding-bottom: 4rem;
+            }
+        }
+    }
+
+    animation: moveInBottom ease-in .6s;
+}
+
+/* Modal Content */
+.modal-content-produk-2 {
+    background-color: $color-white;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    padding: 20px;
+    border-radius: .8rem;
+    width: 90%;
+
+    &-word {
+        color: $color-secondary;
+        h1,h3,h4 {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 2.2rem;
+        }
+
+        &--content-first {
+            padding: 6rem 8rem 2rem 8rem;
+            text-align: center;
+
+            b {
+                color: $color-primary;
+                font-size: 2.5rem;
+            }
+
+            &-img {
+                width: 18rem;
+                height: auto;
+                padding-bottom: 6rem;
+            }
+        }
+
+        &--content-second {
+            padding: 0 4rem 0 4rem;
+            text-align: center;
+            &-ic {
+                font-size: 8rem;
+                padding: 6rem 0 3rem 0;
+            }
+            b {
+                color: $color-primary;
+                font-size: 1.6rem;
+            }
+        }
+
+        &--content-third {
+            margin-top: -3rem;
+            padding: 0 7rem 6rem 7rem;
+            width: 55%;
+            text-align: center;
+            &-isi{
+                margin-left: 10rem;
+                height: auto;
+                border-radius: .8rem;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding: 2rem 0 3rem 0;
+                width: 100%;
+                h4 {
+                    padding: 1rem 3rem 2rem 3rem;
+
+                    span {
+                        font-size: 1rem;
+                        color: $color-primary;
+                    }
+                }
+                p {
+                    border-radius: .8rem;
+                    margin-left: 5.7rem;
+                    width: 70%;
+                    background-color: azure;
+                    color: $color-secondary;
+                    margin-bottom: 1rem;
+                    padding: .6rem 0 .6rem 0;
+                }
+            }
+        }
+    }
+
+    animation: moveInBottom ease-in .6s;
+}
+
+.modal-content-produk-3 {
+    background-color: $color-white;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    padding: 20px;
+    border-radius: .8rem;
+    width: 90%;
+
+    &-word {
+        color: $color-secondary;
+        h1,h3,h4 {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 2.2rem;
+        }
+
+        &--content-first {
+            padding: 6rem 7rem 2rem 7rem;
+            text-align: center;
+
+            b {
+                color: $color-primary;
+                font-size: 2.5rem;
+            }
+
+            &-img {
+                width: 18rem;
+                height: auto;
+                padding-bottom: 6rem;
+            }
+        }
+
+        &--content-second {
+            margin-top: 3rem;
+            padding: 0 7rem 6rem 7rem;
+            width: 55%;
+            text-align: center;
+            &-isi{
+                margin-left: 10rem;
+                height: auto;
+                border-radius: .8rem;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding: 2rem 0 3rem 0;
+                width: 100%;
+                h4 {
+                    padding: 1rem 3rem 2rem 3rem;
+
+                    span {
+                        font-size: 1rem;
+                        color: $color-primary;
+                    }
+                }
+                p {
+                    border-radius: .8rem;
+                    margin-left: 4.7rem;
+                    width: 70%;
+                    background-color: azure;
+                    color: $color-secondary;
+                    margin-bottom: 1rem;
+                    padding: .6rem 1.5rem .6rem 1.5rem;
+                }
+            }
+        }
+    }
+
+    animation: moveInBottom ease-in .6s;
+}
+
+.modal-content-produk-4 {
+    background-color: $color-white;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    padding: 20px;
+    border-radius: .8rem;
+    width: 90%;
+
+    &-word {
+        color: $color-secondary;
+        h1,h3,h4 {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 2.2rem;
+        }
+
+        &--content-first {
+            margin-top: 5rem;
+            padding: 0 7rem 6rem 7rem;
+            width: 55%;
+            text-align: center;
+            &-isi{
+                margin-left: 10rem;
+                height: auto;
+                border-radius: .8rem;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding: 2rem 0 3rem 0;
+                width: 100%;
+                h4 {
+                    font-size: 1.8rem;
+                    padding: 1rem 3rem 2rem 3rem;
+                }
+                p {
+                    border-radius: .8rem;
+                    margin-left: 4.7rem;
+                    width: 70%;
+                    background-color: azure;
+                    color: $color-secondary;
+                    margin-bottom: 1rem;
+                    padding: .6rem 1.5rem .6rem 1.5rem;
+                }
+            }
+        }
+    }
+    animation: moveInBottom ease-in .6s;
+}
+
+.modal-content-produk-5 {
+    background-color: $color-white;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    padding: 20px;
+    border-radius: .8rem;
+    width: 90%;
+
+    &-word {
+        color: $color-secondary;
+        h1,h3 {
+            text-align: center;
+        }
+
+        h4 {
+            padding: 1rem;
+            background-color: azure;
+        }
+
+        ul {
+            margin-left: 2.2rem;
+        }
+
+        &--content-first {
+            padding: 6rem 4rem 2rem 4rem;
+
+            p {
+                text-align: left;
+            }
+
+            b {
+                color: $color-primary;
+                font-size: 2.5rem;
+            }
+
+            &-img {
+                background-color: azure;
+                border-radius: .6rem;
+                padding: 3rem;
+                border: .8rem solid $color-secondary;
+                margin-left: 2rem;
+                width: 16rem;
+                height: auto;
+                box-shadow: 8px 10px $color-primary;
+            }
+        }
+
+        &--content-second {
+            padding: 4rem 4rem 4rem 4rem;
+            text-align: left;
+            &-ic {
+                font-size: 6rem;
+                padding: 2rem 0 4rem 0;
+            }
+            b {
+                color: $color-primary;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    animation: moveInBottom ease-in .6s;
+}
+
+.modal-content-produk-6 {
+    background-color: $color-white;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    padding: 20px;
+    border-radius: .8rem;
+    width: 90%;
+
+    &-word {
+        color: $color-secondary;
+        h1,h3 {
+            text-align: center;
+        }       
+
+        ul {
+            margin-left: 2.2rem;
+        }
+
+        &--content-first {
+            padding: 6rem 4rem 2rem 4rem;
+            text-align: center;
+
+            h4 {
+                text-align: center;
+                padding: 2rem 0 4rem 0;
+            }
+
+            b {
+                color: $color-primary;
+                font-size: 2.5rem;
+            }
+
+            p {
+                border-radius: .8rem;
+                border-radius: .8rem;
+                margin-left: 23rem;
+                width: 28%;
+                background-color: $color-secondary;
+                color: $color-white;
+                margin-bottom: 1rem;
+                padding: .6rem 0 .6rem 0;
+            }
+
+            &-img {
+                width: 25rem;
+                height: auto;
+            }
+        }
+    }
+
+    animation: moveInBottom ease-in .6s;
+}
+
+/* The Close Button */
+.close {
+    color: $color-white;
+    position: absolute;
+    top: 18%;
+    right: 17.5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    &:hover, &:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.close-product {
+    color: $color-white;
+    position: absolute;
+    top: 17%;
+    right: 17.5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    &:hover, &:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+#ct {
+    position: absolute;
+    top: 103%;
+    left: 40.8%;
+    display: none;
+}
+
+#ct-fixed {
+    width: 110%;
+    position: absolute;
+    top: -140%;
+    right: -4%;
+    display: none;
+}
+
+/*#contact-ic-fixed {
+    opacity: 0;
+}*/ 
+
+.contact-ic {
+    font-size: 2.2rem;
+    color: $color-white;
+    margin-left:.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 .1rem .1rem .1rem $color-primary;
+
+    transition: all .2s;
+    &:hover {
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+}
+
+.contact-ic--fixed {
+    margin-left: .4rem;
+    background-color: $color-white;
+    font-size: 2.2rem;
+    color: $color-primary;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 .1rem .1rem .1rem $color-primary;
+
+    transition: all .2s;
+    &:hover {
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+}

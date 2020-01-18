@@ -1,0 +1,91 @@
+
+.ft-del {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, .85),
+        rgba($color-white, .9)),
+        url("../img/contact-bg.jpg");
+    &__content {
+        padding: 5rem;
+        margin-left: 2rem;
+
+        width: 60%;
+        height: 100%;
+
+        color: $color-secondary;
+        &-about {
+            position: relative;
+            width: 35rem;
+
+            padding-right: 3rem;
+            text-align: justify;
+            font-size: 1rem;
+            margin-right: 1rem;
+
+            border-right: .2rem solid $color-primary;
+            &--logo {
+                display: inline-block;
+                #sosmed-logo {
+                    padding: .4rem;
+                    width: 20rem !important;
+                    height: auto !important;
+                }
+            }
+            &--text {
+                position: absolute;
+                top: 3%;
+                left: 18%;
+                display: inline-block;
+
+            }
+            
+            p {
+                font-size: .9rem;
+            }
+        }
+        &-social-media {
+            margin-left: 16rem;
+            text-align: left;
+            width: 26rem;
+            display: inline-block;
+
+            p {
+                font-size: 1rem !important;
+            }
+            &--icon {
+                margin-top: 1rem;
+                .i-1 {
+                    color: $color-white;
+                    padding: .5rem .6rem .5rem .6rem;
+                    border-radius: .3rem;
+                    background-color: $color-secondary;
+                    font-size: 1.5rem;
+                }
+                .i-2 {
+                    color: $color-white;
+                    padding: .5rem .9rem .5rem .9rem;
+                    border-radius: .3rem;
+                    background-color: $color-secondary;
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+    &__content-bottom {
+        text-align: center;
+        padding: 2rem 0 2rem 0;
+        background-color: $color-secondary;
+        color: white;
+
+        width: 100%;
+        height: auto;
+    }
+}

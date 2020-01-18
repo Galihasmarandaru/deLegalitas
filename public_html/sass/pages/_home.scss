@@ -1,0 +1,397 @@
+
+
+.header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, .9),
+        rgba($color-secondary, .95)),
+        url("../img/law-bg.jpg");
+    width: 100%;
+    height: 100vh;
+
+    &__text-box {
+        width: 100%;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__layanan {
+        padding: .8rem 0 1rem 0;
+
+        background-image: linear-gradient(
+            rgba($color-secondary, .6),
+            rgba($color-secondary, .6));
+        width: 100%;
+        height: 7rem;
+
+        position: absolute;
+        bottom: 0%;
+
+        &--draft {
+            margin-left: 1rem;
+            transition: all 1s;
+            &-content {
+                margin-top: 1rem;
+                border-right: .1rem solid $color-primary;
+                color: $color-white;
+                text-align: center;
+
+                animation: moveInBottom 1s ease-in;
+
+                &:last-child {
+                    border: none;
+                }
+                i {
+                    font-size: 3.4rem;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+.del-umkm {
+    padding: 5.5rem 0 4rem 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    &__content {
+        text-align: center;
+        height: 100%;
+
+        &--row {
+            margin-top: 5.5rem;
+        }
+    }
+}
+
+.del-star {
+    padding-top: 6rem;
+    color: $color-secondary;
+
+    &__content {
+        h2 {
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+        &--paragraph {
+            padding: 0 0 4rem 0;
+            width: 100%;
+            height: auto;
+            &-box {
+                margin: 0 0 1rem 7.6rem;
+                width: 80%;
+                height: 15rem;
+                padding: 0 0 3rem 0;
+                &-icon-1 {
+                    width: 20%;
+                    height: 80%;
+                    float: left;
+
+                    border-right: .4rem solid $color-primary;
+                    i {
+                        /*                        color: $color-primary;*/
+                        font-size: 8rem;
+                        margin: 1.2rem 0 0 .6rem;
+                    }
+                }
+                &-text-1 {
+                    width: 56%;
+                    float: right;
+                    margin-right: 12rem; 
+                    h4 {
+                        text-align: left;
+                        font-weight: 1200;
+                    }
+                    p {
+                        text-align: left;
+                    }            
+                }
+                &-icon-2 {
+                    width: 20%;
+                    height: 80%;
+                    float: right;
+
+                    border-left: .4rem solid $color-primary;
+                    i {
+                        /*                        color: $color-primary;*/
+                        font-size: 8rem;
+                        margin: 1.2rem 0 0 3rem;
+                    }
+                }
+                &-text-2 {
+                    width: 56%;
+                    float: right;
+                    h4 {
+                        text-align: right;
+                        font-weight: 1200;
+                        margin-right: 3rem; 
+                    }
+                    p {
+                        text-align: right;
+                        margin-right: 3rem; 
+                    }            
+                }
+            }
+        }
+    }
+}
+
+.del-layanan {    
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-layanan.jpg");
+
+    /*background-color: #f7f7f7;*/
+
+    color: gainsboro;
+    width: 100%;
+    height: 54rem;
+    padding-top: 6rem;
+
+    /*    border-top: .4rem solid $color-primary;
+        border-bottom: .4rem solid $color-primary;*/
+    &__content {
+        padding: 9.5rem 0 4rem 0;
+        width: 92%;
+        margin-left: 3.2rem;
+
+        h2 {
+            padding: 2rem 0 4rem 0;
+        }
+
+        &--1 {
+            padding: 4rem 6rem 4rem 6rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            /*            border-top: 1rem solid $color-primary;
+                        border-bottom: 1rem solid $color-primary;
+                        background-color: $color-white;*/
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            ul {
+                margin-left: 2.5rem;
+            }
+
+        }
+
+        &--2 {
+            padding: 4rem 6rem 4rem 6rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            border-top: 1rem solid $color-primary;
+            border-bottom: 1rem solid $color-primary;
+            background-color: $color-white;
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            ul {
+                margin-left: 2.5rem;
+            }
+
+        }
+
+        &--3 {
+            padding: 4rem 6rem 4rem 6rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            border-top: 1rem solid $color-primary;
+            border-bottom: 1rem solid $color-primary;
+            background-color: $color-white;
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            ul {
+                margin-left: 2.5rem;
+            }
+
+        }
+
+        &--4 {
+            padding: 4rem 6rem 4rem 6rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            border-top: 1rem solid $color-primary;
+            border-bottom: 1rem solid $color-primary;
+            background-color: $color-white;
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            ul {
+                margin-left: 2.5rem;
+            }
+
+        }
+
+        &--5 {
+            padding: 4rem 6rem 4rem 6rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            border-top: 1rem solid $color-primary;
+            border-bottom: 1rem solid $color-primary;
+            background-color: $color-white;
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            ul {
+                margin-left: 2.5rem;
+            }
+
+        }
+
+        &--6 {
+            padding: 4rem 6rem 4rem 6rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            border-top: 1rem solid $color-primary;
+            border-bottom: 1rem solid $color-primary;
+            background-color: $color-white;
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            ul {
+                margin-left: 2.5rem;
+            }
+
+        }
+    }
+}
+
+.del-contact {
+    padding: 8rem 0 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:
+        url("../img/contact-bg-2.jpg");
+    &__content {
+
+        &--form {
+            background-image: linear-gradient(
+                rgba($color-primary,.95),
+                rgba($color-secondary,.95));
+
+            position: relative;
+            margin-top: 15rem;
+            height: 26vh;
+            &-inside {
+                border-radius: .4rem;
+                position: absolute;
+                top: -160%;
+                left: 8.5%;
+                padding: 1rem 1rem 2rem 1rem;
+
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-white, .9),
+                    rgba($color-white, .95));
+                width: 80%;
+                height: auto;
+                box-shadow: 0 .1rem .4rem 0 $color-black;
+                &-row {
+                    padding: 1rem;
+                    display: inline-block;
+                }
+                h1 {
+                    padding: 2rem 0 0 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.del-about {
+    padding: 8.8rem 0 8rem 0;
+    &__content {
+        text-align: center;
+        &--paragraph {
+            color: $color-secondary;
+
+            text-align: justify !important; 
+            width: 70%;
+
+            margin-left: 12rem;
+        }
+    }
+}

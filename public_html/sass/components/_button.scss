@@ -1,0 +1,89 @@
+
+.btn {
+    &, // berfungsi untuk membuat elemen <button> juga terbaca
+    &:link,
+        &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .6rem 2rem;
+        display: inline-block;
+        border-radius: .3rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //change for the <button> element
+        border: none;
+        cursor: pointer;
+
+    }
+
+    &:hover{ 
+        transform: translateY(-.2rem);
+        box-shadow: 0 .5rem 2rem rgba(0,0,0,.2);
+
+    }
+
+    &:active,
+        &:focus{ // focus membuat outline biru pada button saat di klik jadi hilang
+             transform: translateY(-.1rem);
+             box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+             outline: none; // outline biru pada button saat di klik jadi hilang
+    }
+
+    &--gold {
+        background-color: goldenrod;
+        color: $color-white;
+    }
+
+    &--green {
+        padding: 1rem 2rem 1rem 2rem;
+
+        background-color: $color-primary-dark;
+        color: $color-white;
+
+        animation: moveInBottom 1s ease-in;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+    }
+
+    &--green-fixed {
+        padding: 1rem 2rem 1rem 2rem;
+
+        background-color: $color-primary-dark;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
+.btn-fixed-contact-scrolled {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+
+}

@@ -1,0 +1,229 @@
+
+.card {
+    margin-left: 4.5rem;
+    position: relative;
+/*    background-color: #e6e6e6;*/
+    width: 95%;
+    height: 17rem;
+/*    border-top: 1rem solid $color-primary-dark;
+    border-bottom: 1rem solid $color-primary-dark;*/
+    border-radius: .8rem;
+    box-shadow: .1rem .2rem 1rem 0 rgba($color-secondary, .4);
+
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+
+    a {
+        font-size: .9rem !important;
+    }
+
+    &-btn {
+        position: absolute;
+        left: 26.5%;
+        bottom: -10%;
+
+        a {
+            font-size: 1.2rem !important;
+        }
+    }
+}
+
+.card_layanan { // membuat kartu animasi berputar
+                perspective: 150rem;// membuat perputaran lebih halus
+                -moz-perspective: 150rem; //diimplementasikan ke mozilla firefox  
+                position: relative; // membuat posisi kartu menjadi sejajar untuk dibuat depan belakang
+                height: 11rem;
+
+                &__side {
+                    //membuat kartu berputar
+                    height: 17rem;
+                    transition: all .8s ease;
+                    position: absolute; // membuat posisi kartu menjadi sejajar untuk dibuat depan belakang
+                    top: -20%;
+                    left: -2.2%;
+                    width: 100%;
+                    backface-visibility: hidden; // menyembunyikan bagian belakang kartu
+/*                    border-radius: 3px;*/
+                    /*            overflow: hidden;// membuat gambar mengikuti kotak card yang harus memiliki border radius, bisa berbeda pada CHROME dan SAFARI*/
+                    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+                    &--front { //kartu bagian depan
+                               background-color: $color-white;
+                               border: .5rem solid $color-white;
+                    }
+
+                    &--back { //kartu bagian belakang
+                              transform: rotateY(180deg);
+                              &-1 {
+                                  background-color: $color-white;
+                                  border: .5rem solid $color-white;
+                              }
+                              &-2 {
+                                  background-color: $color-white;
+                                  border: .5rem solid $color-white;
+                              }
+                              &-3 {
+                                  background-color: $color-white;
+                                  border: .5rem solid $color-white;
+                              }
+                              &-4 {
+                                  background-color: $color-white;
+                                  border: .5rem solid $color-white;
+                              }
+                              &-5 {
+                                  background-color: $color-white;
+                                  border: .5rem solid $color-white;
+                              }
+                              &-6 {
+                                  background-color: $color-white;
+                                  border: .5rem solid $color-white;
+                              }
+                    }
+                    //membuat kartu berputar
+                }
+
+                &:hover &__side--front {
+                    transform: rotateY(-180deg); // membuat kartunya berputar pada sumbu Y
+                }
+                &:hover &__side--back {
+                    transform: rotateY(0); // membuat kartunya berputar pada sumbu Y
+                }
+
+                &__picture {
+                    background-size: cover;
+                    height: 14.2rem;
+                    background-blend-mode: screen;
+                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                    &--1 {
+                        background-image: 
+                            url(../img/pro-1.jpg);
+                    }
+
+                    &--2 {
+                        background-image:  
+                            url(../img/pro-2.jpg);
+                    }
+
+                    &--3 {
+                        background-image: 
+                            url(../img/pro-3.jpg);
+                    }
+                    &--4 {
+                        background-image: 
+                            url(../img/pro-4.jpg);
+                    }
+                    &--5 {
+                        background-image: 
+                            url(../img/pro-5.jpg);
+                    }
+                    &--6 {
+                        background-image: 
+                            url(../img/pro-6.jpg);
+                    }
+                }
+
+                &__heading {
+                    text-transform: uppercase;
+                    text-align: right;
+                    color: $color-white;
+                    position: absolute;
+                    top: 9rem;
+                    right: 2rem;
+                    width: 75%;
+                }
+
+                &__heading-span {
+                    padding: 1rem 1.5rem;
+                    -webkit-box-decoration-break: clone;
+                    box-decoration-break: clone; //membuat tulisan menjadi sejajar pada the sea explorer
+                    &--1 {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        background-image: linear-gradient(to right bottom, 
+                            rgba($color-primary-dark, .85), 
+                            rgba($color-primary-dark, .85));
+                    }
+                    &--2 {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        background-image: linear-gradient(to right bottom, 
+                            rgba($color-primary-dark, .85), 
+                            rgba($color-primary-dark, .85));
+                    }
+                    &--3 {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        background-image: linear-gradient(to right bottom, 
+                            rgba($color-primary-dark, .85), 
+                            rgba($color-primary-dark, .85));
+                    }
+                    &--4 {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        background-image: linear-gradient(to right bottom, 
+                            rgba($color-primary-dark, .85), 
+                            rgba($color-primary-dark, .85));
+                    }
+                    &--5 {
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        background-image: linear-gradient(to right bottom, 
+                            rgba($color-primary-dark, .85), 
+                            rgba($color-primary-dark, .85));
+                    }
+                    &--6 {
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        background-image: linear-gradient(to right bottom, 
+                            rgba($color-primary-dark, .85), 
+                            rgba($color-primary-dark, .85));
+                    }
+                }
+
+                &__details {
+                    color: $color-primary-dark;
+                    padding: 2.2rem 3rem 1.5rem 3rem;
+                    .span-first {
+                        text-align: justify;
+                        font-weight: 600;
+                    }
+                    ul {
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                        margin-left: 2rem;
+                    }
+                    .span-second {
+                        text-align: justify;
+                        font-size: .97rem;
+                        font-weight: 400;
+                    }
+                }
+
+                &__cta {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 90%;
+                    text-align: center;
+                }
+
+                &__price-box {
+                    color: $color-secondary;
+                    margin-bottom: 2rem;
+                }
+
+                &__price-only {
+                    font-size: .8rem;
+                    text-transform: uppercase;
+                }
+
+                &__price-value {
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    font-weight: 800;
+                }
+}
